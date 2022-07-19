@@ -7,6 +7,8 @@ const promessFunction = () => {
 
             resolve(greet)
 
+
+
         }, 2000)
 
     })
@@ -14,4 +16,13 @@ const promessFunction = () => {
 
 }
 
-promessFunction()
+
+const waitForMyResults = async () => {
+
+    const result = await promessFunction()
+    console.log(result);
+
+}
+
+waitForMyResults()
+
